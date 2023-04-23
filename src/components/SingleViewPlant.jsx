@@ -6,7 +6,7 @@ const SinglePageView = () => {
   const [plant, setPlant] = useState(null);
 
   useEffect(() => {
-    fetch(`https://perenual.com/api/species/${id}?key=sk-naaK643621610b96f491`)
+    fetch(`https://perenual.com/api/species/${id}?key=${process.env.REACT_APP_API_KEY}`)
       .then((response) => response.json())
       .then((data) => setPlant(data.data));
   }, [id]);
