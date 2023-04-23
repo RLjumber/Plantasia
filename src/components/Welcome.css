@@ -1,0 +1,85 @@
+.welcome_main {
+    margin: auto; /*this aligns the parent element horizontally, always forget this*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: solid red 1px; */
+    height: 80vh;
+    width: 100vw;
+    /* margin-top: 20vh; */
+    /* background-color: rgba(65, 81, 65, 0.945); */
+    background-color: rgba(26, 32, 26, 0.945);
+    /* border-bottom-left-radius: 50% 100px;
+    border-bottom-right-radius: 50% 100px; */
+    position: relative;
+    overflow: hidden; 
+}
+
+.welcome_main::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -50px; /* This will adjust the position of the curve */
+    left: 0;
+    right: 0;
+    height: 100px; /* This will adjust the height of the curve */
+    background-color: rgba(26, 32, 26, 0.945); /* This will match the background color of the div */
+    border-radius: 50% / 100px 0 0 0; /* This will create the curved shape */
+  }
+
+@media only screen and (max-width: 1200px) {
+    .welcome_main {
+        height: auto;
+    }
+
+    .main_title {
+        font-size: 1rem;
+    }
+
+    .main_title h4 {
+        font-size: 1rem;
+    }
+
+    .extra_info {
+        font-size: 1rem;
+    }
+
+    .extra_info h4 {
+        font-size: 1rem;
+    }
+  }
+
+@font-face {
+    font-family: "Victor Mono Light Nerd Font Complete";
+    src: url(../assets/fonts/Victor\ Mono\ Light\ Nerd\ Font\ Complete.ttf);
+}
+
+.main_title {
+    /* border: solid rgb(255, 70, 156) 1px; */
+    font-family: "Victor Mono Light Nerd Font Complete";
+    font-size: 1.5rem;
+    margin: 2rem;
+    max-width: 30vw;
+    margin-top: 15vh;
+    color: rgb(177, 177, 177);
+}
+
+.main_title h4 {
+    padding: 1em;
+    padding-top: 3em;
+}
+
+.extra_info {
+    /* border: solid rgb(32, 32, 0) 1px; */
+    font-family: "Victor Mono Light Nerd Font Complete";
+    font-size: 1.5rem;
+    margin: 2rem;
+    max-width: 30vw;
+    margin-top: 15vh;
+    color: rgb(177, 177, 177);
+}
+
+.extra_info h4 {
+    padding: 1em;
+    padding-top: 3em;
+}

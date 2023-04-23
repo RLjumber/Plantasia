@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import Home from './components/Home';
+import SingleViewPlant from './components/SingleViewPlant';
+import { Routes, Route } from 'react-router-dom';
+// import Switch from 'react-router-dom/Switch';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <Header />
+          <Routes>
+            <Route exact path='/' Component={Home}/>
+            <Route exact path='/plant' Component={SingleViewPlant}/>
+            <Route exact path="/plants/:id" component={SingleViewPlant} />
+          </Routes>
+      </div>
   );
 }
 
 export default App;
+
+
+// Switch not working, cannot be imported for some reason. Tried reinstalling the latest react-router but still no luck. Just using Route components here

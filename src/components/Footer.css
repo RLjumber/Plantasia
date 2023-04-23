@@ -1,0 +1,23 @@
+.footer_main {
+    background-color: rgba(23, 39, 24, 0.895);
+    width: 100vw;
+    height: 30vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.left_list_div {
+    border: solid red 1px;
+    padding-left: 0;
+}
+
+.right_list_div {
+    border: solid red 1px;
+    padding: 0;
+}
+
+.list {
+    list-style: none;
+}

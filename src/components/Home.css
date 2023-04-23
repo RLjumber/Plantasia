@@ -1,0 +1,13 @@
+.home {
+    height: 100vh;
+    position: fixed; /* Set the position to fixed for the background image */
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    background-image: url("../assets/dark_plant_background.jpg");
+    background-size: cover;
+    background-position: center top;
+    overflow-y: scroll;
+    
+}

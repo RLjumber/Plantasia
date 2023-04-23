@@ -1,0 +1,150 @@
+.all_plants_container {
+    margin-top: 5vh;
+}
+
+.plant_container {
+    /* border: solid blue 2px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5rem;
+    justify-content: center;
+    /* text-align: left; */
+}
+
+@font-face {
+    font-family: "Victor Mono Light Nerd Font Complete";
+    src: url(../assets/fonts/Victor\ Mono\ Light\ Nerd\ Font\ Complete.ttf);
+}
+
+
+.plant_div {
+  margin: 1rem;
+  border: solid rgb(255, 255, 255) 2px;
+  padding: 0;
+  border-radius: 4px;
+  background-color: rgb(241, 255, 241);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  width: 15rem;
+  height: auto;
+  list-style: none;
+  text-align: left;
+  font-family: "Victor Mono Light Nerd Font Complete";
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.plant_div:hover {
+  box-shadow: 0px 5px 20px rgba(119, 255, 70, 0.906);
+  transform: translateX(-4px);
+  transform: translateY(-2px);
+  border: solid rgb(50, 201, 65) 2px;
+}
+
+.name {
+  text-align: center;
+  width: 15rem;
+  font-size: 1.2rem;
+  /* border: solid red 1px; */
+  margin-top: 1rem;
+  height: 5rem;
+}
+
+.image {
+  width: 240px;
+  height: 240px;
+  max-width: 240px;
+  max-height: 240px;
+  margin: 0;
+  padding: 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#scientific_name {
+    text-align: center;
+    margin: 1rem;
+    font-size: smaller;
+    font-weight: 550;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.page_list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    border: solid red 1px;
+    align-items: center;
+    background-color: rgb(255, 253, 233);
+    width: 10rem;
+    max-width: auto;
+    justify-content: space-evenly;
+    height: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+  }
+  
+  .page_list li {
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .current_page {
+    font-weight: bold;
+    color: rgb(13, 237, 13)
+  }
+  
+  .prev_button {
+    margin-right: 0.5rem;
+    font-family: "Victor Mono Light Nerd Font Complete";
+    font-weight: 700;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: rgb(255, 165, 183);
+  }
+
+  .next_button {
+    margin-left: 0.5rem;
+    font-family: "Victor Mono Light Nerd Font Complete";
+    font-weight: 700;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: rgb(167, 255, 169);
+  }
+
+  .page_form {
+    font-family: "Victor Mono Light Nerd Font Complete";
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  #go_to {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 3.5rem;
+    height: 1.5rem;
+    background-color: rgb(255, 253, 233);
+    border-radius: 5px;
+  }
+
+  #submit_go_to {
+    border-radius: 5px;
+    background-color: green;
+  }
