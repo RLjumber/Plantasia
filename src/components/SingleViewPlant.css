@@ -39,7 +39,7 @@ body {
   }
 
   .information {
-    border: solid red 1px;
+    /* border: solid red 1px; */
     width: 40vw;
     max-width: 40vw;
   }
