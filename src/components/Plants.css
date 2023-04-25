@@ -38,13 +38,16 @@
   border-radius: 10px;
   color: black;
   text-decoration: none;
+  transition-duration: 0.25s;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-in-out;
 }
 
 .plant_div:hover {
-  box-shadow: 0px 5px 20px rgba(119, 255, 70, 0.906);
+  box-shadow: 0px 5px 15px rgba(231, 255, 222, 0.906);
   transform: translateX(-4px);
   transform: translateY(-2px);
-  border: solid rgb(50, 201, 65) 2px;
+  border: solid rgb(92, 255, 111) 2px;
 }
 
 .name {

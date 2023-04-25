@@ -50,6 +50,6 @@
 #Plantasia:hover {
     /* text-decoration: none; */
     color: rgb(208, 218, 71);
-    transform: translateX(-2px);
-    transform: translateY(2px);
+    /* transform: translateX(-2px);
+    transform: translateY(2px); */
 }
