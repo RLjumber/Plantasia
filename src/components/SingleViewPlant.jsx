@@ -6,10 +6,15 @@ const SinglePageView = () => {
   const [plant, setPlant] = useState(null);
 
   useEffect(() => {
-    fetch(`https://perenual.com/api/species/${id}?key=${process.env.REACT_APP_API_KEY}`)
-      .then((response) => response.json())
-      .then((data) => setPlant(data.data));
+    if (id !== undefined) {
+      fetch(`https://perenual.com/api/species/details/${id}?key=${process.env.REACT_APP_API_KEY}`)
+        .then((response) => response.json())
+        .then((data) => setPlant(data))
+        .catch((error) => console.log(error));
+    }
+
   }, [id]);
+  
 
   if (!plant) {
     return <div>Loading...</div>;
@@ -20,7 +25,8 @@ const SinglePageView = () => {
       <h1>{plant.common_name}</h1>
       <p>Scientific Name: {plant.scientific_name}</p>
       <p>Other Name: {plant.other_name}</p>
-      <img src={plant.default_image.thumbnail} alt="Plant" />
+      <p>Origin: {plant.origin.map}</p>
+      <img src={plant.default_image.regular_url} alt="Plant" />
     </div>
   );
 };

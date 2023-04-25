@@ -10,14 +10,16 @@
     z-index: 1;
     /* border-bottom: solid black 1px; */
     box-shadow: 0px 2px 15px black;
+    /* trasition for background color, height, and padding */
     transition-duration: 0.5s;
-    transition-property: background-color, height;
+    transition-property: background-color, height, padding-top;
     transition-timing-function: ease-in-out;
 }
 
 .header:hover {
     background-color: rgb(62, 158, 77);
     height: 12vh;
+    padding-top: 2vh;
 }
 
 @font-face {
@@ -37,14 +39,8 @@
     color: rgb(197, 197, 197);
     font-weight: 700;
     font-family: "Victor Mono Light Nerd Font Complete";
-    transition-duration: 0.5s;
-    transition-property: padding-top;
-    transition-timing-function: ease-in-out;
 }
 
-.header_content:hover {
-    padding-top: 2vh;
-}
 
 #Plantasia {
     text-decoration: none;

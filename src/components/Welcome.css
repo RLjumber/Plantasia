@@ -83,3 +83,11 @@
     padding: 1em;
     padding-top: 3em;
 }
+
+a {
+    color: rgb(161, 161, 255);
+}
+
+a:hover {
+    color: rgb(0, 0, 255);
+}

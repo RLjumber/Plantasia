@@ -9,9 +9,9 @@ function App() {
       <div className="App">
         <Header />
           <Routes>
-            <Route exact path='/' Component={Home}/>
-            <Route exact path='/plant' Component={SingleViewPlant}/>
-            <Route exact path="/plants/:id" component={SingleViewPlant} />
+            <Route exact path='/' element={<Home />}/>
+            {/* <Route exact path='/plant' Component={SingleViewPlant}/> */}
+            <Route exact path="/plants/:id" element={<SingleViewPlant />} />
           </Routes>
       </div>
   );
