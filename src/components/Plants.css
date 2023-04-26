@@ -29,15 +29,15 @@
   width: 15rem;
   height: auto;
   list-style: none;
-  text-align: left;
   font-family: "Victor Mono Light Nerd Font Complete";
   font-weight: 900;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   border-radius: 10px;
   color: black;
   text-decoration: none;
+  
   transition-duration: 0.25s;
   transition-property: transform, box-shadow;
   transition-timing-function: ease-in-out;
@@ -50,9 +50,15 @@
   border: solid rgb(92, 255, 111) 2px;
 }
 
+.card_text {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+
+}
+
 .name {
   text-align: center;
-  width: 15rem;
   font-size: 1.2rem;
   /* border: solid red 1px; */
   margin-top: 1rem;
@@ -75,6 +81,8 @@
     margin: 1rem;
     font-size: smaller;
     font-weight: 550;
+    /* border: solid red 1px; */
+    height: 3rem;
 }
 
 .pagination {
